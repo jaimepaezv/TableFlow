@@ -64,7 +64,7 @@ Example:
 
 ## Demo
 
-Check out the live demo [here](#) <!-- Add a link to your demo -->.
+Check out the live demo [here]([#](https://output.jsbin.com/decocem/1))
 
 ---
 
