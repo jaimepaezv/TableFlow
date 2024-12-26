@@ -1,0 +1,39 @@
+/* Styles for responsive tables */
+.responsive-table-container {
+    overflow-x: auto;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th, .responsive-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .responsive-table, .responsive-table th, .responsive-table td {
+        display: block;
+    }
+
+    .responsive-table thead {
+        display: none;
+    }
+
+    .responsive-table tr {
+        margin-bottom: 15px;
+    }
+
+    .responsive-table td {
+        text-align: right;
+        position: relative;
+    }
+
+    .responsive-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
